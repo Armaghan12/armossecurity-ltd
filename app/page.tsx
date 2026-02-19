@@ -6,34 +6,31 @@ export default function Home() {
     <main className="bg-gray-950 text-white">
 
       {/* ================= HERO ================= */}
-     <section className="relative min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center justify-center text-center px-4">
+      <section className="relative h-[55vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-center text-center">
 
-        {/* Background Image */}
         <Image
           src="/images/security-hero.jpg"
           alt="Professional Security Services"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover"
         />
 
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/80"></div>
+        <div className="absolute inset-0 bg-black/75"></div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 tracking-wide">
+        <div className="relative z-10 max-w-4xl px-4 sm:px-6">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 sm:mb-6 tracking-wide">
             ARMOS SECURITY LTD
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8">
-            Elite Door Supervision & 24/7 CCTV Monitoring <br className="hidden sm:block" />
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-10">
+            Elite Door Supervision & 24/7 CCTV Monitoring
             Across the United Kingdom
           </p>
 
           <Link
             href="/services"
-            className="inline-block bg-gradient-to-r from-yellow-600 to-yellow-500 text-black px-8 py-3 sm:px-10 sm:py-4 rounded-md font-semibold hover:from-yellow-500 hover:to-yellow-400 transition shadow-xl"
+            className="inline-block bg-gradient-to-r from-yellow-600 to-yellow-500 text-black px-6 sm:px-10 py-3 sm:py-4 rounded-md font-semibold hover:from-yellow-500 hover:to-yellow-400 transition shadow-2xl"
           >
             Explore Our Services
           </Link>
@@ -41,41 +38,94 @@ export default function Home() {
       </section>
 
       {/* ================= SERVICES PREVIEW ================= */}
-      <section className="py-20 bg-black px-4">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="py-16 sm:py-20 md:py-28 bg-black">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
 
-          <h2 className="text-3xl sm:text-4xl font-bold mb-14 text-yellow-500">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-12 sm:mb-20 text-yellow-500">
             Our Security Services
           </h2>
 
-          <div className="grid gap-10 md:grid-cols-2">
+          <div className="grid gap-10 md:grid-cols-2 md:gap-14">
 
-            <div className="bg-gray-900 p-8 sm:p-10 rounded-2xl shadow-xl">
-              <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-yellow-500">
+            <div className="bg-gray-900 p-8 sm:p-12 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-yellow-500">
                 Door Supervision
               </h3>
-              <p className="text-gray-400 leading-relaxed">
+
+              <p className="text-gray-400 leading-relaxed text-base sm:text-lg">
                 Fully SIA licensed professionals delivering strong,
-                controlled security presence for venues and events.
+                controlled security presence for venues, events,
+                and commercial properties.
               </p>
             </div>
 
-            <div className="bg-gray-900 p-8 sm:p-10 rounded-2xl shadow-xl">
-              <h3 className="text-xl sm:text-2xl font-semibold mb-4 text-yellow-500">
+            <div className="bg-gray-900 p-8 sm:p-12 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300">
+              <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-yellow-500">
                 24/7 CCTV Monitoring
               </h3>
-              <p className="text-gray-400 leading-relaxed">
-                Advanced surveillance systems with real-time
-                monitoring and rapid response.
+
+              <p className="text-gray-400 leading-relaxed text-base sm:text-lg">
+                Advanced remote surveillance systems with real-time
+                threat detection and rapid incident response.
               </p>
             </div>
 
           </div>
+
+          <div className="mt-12 sm:mt-16">
+            <Link
+              href="/services"
+              className="inline-block bg-gradient-to-r from-yellow-600 to-yellow-500 text-black px-6 sm:px-10 py-3 sm:py-4 rounded-md font-semibold hover:from-yellow-500 hover:to-yellow-400 transition shadow-xl"
+            >
+              View All Services
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ================= WHY CHOOSE US ================= */}
+      <section className="py-16 sm:py-20 md:py-28 bg-gray-950 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-10 text-yellow-500">
+            Why Choose ARMOS SECURITY LTD?
+          </h2>
+
+          <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
+            We provide reliable, compliant, and professional security
+            solutions tailored to each client. Our officers are fully
+            trained, SIA licensed, and committed to delivering the
+            highest standards of protection and professionalism.
+          </p>
+
+        </div>
+      </section>
+
+      {/* ================= CONTACT CTA ================= */}
+      <section className="py-16 sm:py-20 md:py-28 bg-gradient-to-r from-yellow-600 to-yellow-500 text-black text-center">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
+            Require Professional Security Services?
+          </h2>
+
+          <p className="mb-8 sm:mb-10 text-base sm:text-lg">
+            Contact ARMOS SECURITY LTD today for a tailored security solution.
+          </p>
+
+          <Link
+            href="/contact"
+            className="inline-block bg-black text-white px-6 sm:px-10 py-3 sm:py-4 rounded-md font-semibold hover:bg-gray-900 transition shadow-xl"
+          >
+            Request a Quote
+          </Link>
+
         </div>
       </section>
 
       {/* ================= FOOTER ================= */}
-      <footer className="bg-black text-gray-500 text-center py-6 text-sm px-4">
+      <footer className="bg-black text-gray-500 text-center py-6 text-xs sm:text-sm">
         © {new Date().getFullYear()} ARMOS SECURITY LTD. All Rights Reserved.
       </footer>
 
