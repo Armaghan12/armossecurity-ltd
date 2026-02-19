@@ -91,10 +91,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-black text-gray-500 text-center py-6 text-sm">
-        © {new Date().getFullYear()} ARMOS SECURITY LTD. All Rights Reserved.
-      </footer>
+     {/* ================= CTA FOOTER ================= */}
+<section className="py-20 bg-gradient-to-r from-yellow-600 to-yellow-500 text-black text-center">
+  <div className="max-w-3xl mx-auto px-6">
+
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+      Require Professional Security Services?
+    </h2>
+
+    <p className="text-base sm:text-lg mb-8">
+      Contact ARMOS SECURITY LTD today for a tailored security solution
+      designed specifically for your business.
+    </p>
+
+    <a
+      href="/quote"
+      className="inline-block bg-black text-white px-8 py-4 rounded-md font-semibold hover:bg-gray-900 transition shadow-xl"
+    >
+      Request a Quote
+    </a>
+
+  </div>
+</section>
+
 
     </main>
   );
