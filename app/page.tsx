@@ -6,7 +6,7 @@ export default function Home() {
     <main className="bg-gray-950 text-white">
 
       {/* ================= HERO ================= */}
-      <section className="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] flex items-center justify-center text-center px-4">
+     <section className="relative min-h-[60vh] sm:min-h-[65vh] md:min-h-[70vh] flex items-center justify-center text-center px-4">
 
         {/* Background Image */}
         <Image
@@ -22,11 +22,11 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-wide mb-5">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 tracking-wide">
             ARMOS SECURITY LTD
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8">
             Elite Door Supervision & 24/7 CCTV Monitoring <br className="hidden sm:block" />
             Across the United Kingdom
           </p>
