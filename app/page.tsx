@@ -113,8 +113,9 @@ export default function Home() {
 
   </div>
 </section>
-
-
+<footer className="bg-black text-gray-500 text-center py-8 text-sm">
+        © {new Date().getFullYear()} ARMOS SECURITY LTD. All Rights Reserved.
+      </footer>
     </main>
   );
 }
